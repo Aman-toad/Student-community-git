@@ -1,0 +1,247 @@
+/* this css is for all page for animation */
+
+.white-container {
+  animation: opaciting-left 0.8s ease-out forwards;
+}
+
+.red-container {
+  animation: opaciting-right 0.8s ease-out forwards;
+}
+
+.leaderboard-left-motion {
+  animation: opaciting-up 0.8s ease-out forwards;
+}
+
+.leaderboard-right-motion {
+  animation: opaciting-down 0.8s ease-out forwards;
+}
+
+@keyframes opaciting-left {
+  0% {
+    opacity: 0;
+    translate: 40px;
+  }
+
+  25% {
+    opacity: 0.25;
+    translate: 20px;
+  }
+
+  50% {
+    opacity: 0.5;
+    translate: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes opaciting-right {
+  0% {
+    opacity: 0;
+    translate: -40px;
+  }
+
+  25% {
+    opacity: 0.25;
+    translate: -20px;
+  }
+
+  50% {
+    opacity: 0.5;
+    translate: -10px;
+  }
+
+  100% {
+    opacity: 1;
+    translate: 0px;
+  }
+}
+
+@keyframes opaciting-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  25% {
+    opacity: 0.25;
+    transform: translateY(20px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes opaciting-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  25% {
+    opacity: 0.25;
+    transform: translateY(-20px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.content-up {
+  animation: scrollUpScale linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.content-right{
+  animation: scrollUpRight linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.content-left{
+  animation: scrollUpLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+/* Keyframe for scrolling effects all  */
+@keyframes scrollUpScale {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+@keyframes scrollUpRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes scrollUpLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+.login-box {
+  animation: move-left 0.8s ease-out forwards;
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  25% {
+    opacity: 0.25;
+    transform: translateX(20px);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animateWords {
+  0% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  75% {
+    transform: translateY(-300%);
+  }
+
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+/* new keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes float-slow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
