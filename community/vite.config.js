@@ -9,4 +9,5 @@ export default defineConfig({
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   plugins: [react(), tailwindcss()],
+  base:'Student-community-git'
 })
