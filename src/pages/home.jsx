@@ -160,10 +160,10 @@ export default function HomePage() {
 
           {/* Characters - Now prominently displayed at the top */}
           <div className="flex flex-row gap-6 md:gap-16 justify-center mb-6 md:mb-8">
-            <img src="src/assets/doodles/boy-1.svg" className='w-20 md:w-28 animate-float-slow' alt="image-boy-1" />
-            <img src="src/assets/doodles/boy-2.svg" className='w-16 md:w-24 animate-float' alt="image-boy-2" />
-            <img src="src/assets/doodles/boy-3.svg" className='w-24 md:w-32 animate-float-slow' alt="image-boy-3" />
-            <img src="src/assets/doodles/boy-4.svg" className='w-18 md:w-26 animate-float' alt="image-boy-4" />
+            <img src={`${import.meta.env.BASE_URL}images/boy-1.svg`} className='w-20 md:w-28 animate-float-slow' alt="image-boy-1" />
+            <img src={`${import.meta.env.BASE_URL}images/boy-2.svg`} className='w-16 md:w-24 animate-float' alt="image-boy-2" />
+            <img src={`${import.meta.env.BASE_URL}images/boy-3.svg`} className='w-24 md:w-32 animate-float-slow' alt="image-boy-3" />
+            <img src={`${import.meta.env.BASE_URL}images/boy-4.svg`} className='w-18 md:w-26 animate-float' alt="image-boy-4" />
           </div>
 
           {/* Content */}
